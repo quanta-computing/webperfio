@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<head>
+{% include head.html %}
+</head>
+<html lang="en">
+  <body data-spy="scroll" data-target="#main-nav">
+    <div class="page-wrapper" id="top">
+        <!-- header-2 -->
+        <div class="main-nav">
+          {% include header.html %}
+        </div>
+        <div class="content">
+          {{ content }}
+        </div>
+    </div>
+    {% include footer.html %}
+    {% include foot.html %}
+  </body>
+</html>
