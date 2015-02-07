@@ -1,0 +1,99 @@
+---
+layout: default
+comments: true
+active: blog
+pagetype: article
+---
+
+<section class="header-8-sub empty">
+  <div class="background bg-green">&nbsp;</div>
+  <div class="container">
+  </div>
+</section>
+
+<section class="blog-1">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-8">
+        <div class="post">
+          <h3><a href="{{ post.url }}">{{ page.title }}</a></h3>
+          <div class="meta">
+            by {{ page.author }} on {{page.date | date: "%b %-d, %Y" }}
+          </div>
+          <div class="content">
+            {{ content }}
+          </div>
+          <div class="comment">
+            {% if page.comments %}
+              <div id="disqus_thread"></div>
+              <script type="text/javascript">
+              /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+              var disqus_shortname = 'basilicio'; // required: replace example with your forum shortname
+
+              /* * * DON'T EDIT BELOW THIS LINE * * */
+              (function() {
+                var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+              })();
+              </script>
+              <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+              <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+            {% endif %}
+          </div>
+
+        </div>
+      </div>
+      <div class="col-sm-3 col-sm-offset-1">
+        <div class="about">
+          <h6>ABOUT BASILIC</h6>
+          <p>Basilic offers actionable website monitoring solutions to companies with high online stakes.
+          </p>
+        </div>
+        <div class="newletter">
+          <h6>NEWSLETTER</h6>
+            <div class="subscribe-form">
+              <form
+              id="kol-id-29410"
+              data-succes_title="Thank you!"
+              data-success_msg="Spread the word and get a guest blog post!"
+              data-social_msg="Great web performance articles on Basilic's blog!">
+
+              <div class="input-group">
+                <input name="email" class="form-control" placeholder="Email Adress" type="text">
+                <button class="btn btn-primary" type="submit" data-kol_id="29410">Subscribe</button>
+              </div>
+              <div class="info">
+                We'll only use your email to tell you about new posts.
+              </div>
+              <div class="error">
+              </div>
+            </form>
+          </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="content-11">
+  <div class="container">
+    <span>Are your websites fast? Find out before your customers.</span>
+    <a class="btn btn-large btn-warning" href="/signup/">Sign Up</a>
+  </div>
+</section>
+
+<!-- AddThis Smart Layers BEGIN -->
+<!-- Go to http://www.addthis.com/get/smart-layers to customize -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-537e2096265db34c"></script>
+<script type="text/javascript">
+  addthis.layers({
+    'theme' : 'transparent',
+    'share' : {
+      'position' : 'left',
+      'services' : 'twitter, linkedin, google_plusone_share',
+      'offset':{'top':'250px'},
+    }
+  });
+</script>
+<!-- AddThis Smart Layers END -->

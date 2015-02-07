@@ -1,0 +1,73 @@
+---
+layout: default
+title: Basilic, Web Performance Management
+active: blog
+pagetype: blog
+---
+
+
+<section class="header-8-sub ">
+  <div class="background bg-green">&nbsp;</div>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-10 col-sm-offset-1">
+        <h3>Basilic Blog</h3>
+        <p class="lead">It's all about data and web performance.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="blog-1">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-8">
+                {% for post in site.posts %}
+                  <div class="post">
+                    <h4><a href="{{ post.url }}">{{ post.title }}</a></h4>
+                    <p class="meta">
+                      by {{ post.author }} on {{post.date | date: "%b %-d, %Y" }}
+                    <p>
+                    <p class="excerpt">{{ post.excerpt }}<p>
+                    <a class="btn btn-small btn-inverse" type="button" href="{{ post.url }}">Read more</a>
+                  </div>
+                {% endfor %}
+
+            </div>
+            <div class="col-sm-3 col-sm-offset-1">
+                <div class="about">
+                  <h6>ABOUT BASILIC</h6>
+                  <p>Basilic offers actionable website monitoring solutions to companies with high online stakes.</p>
+                </div>
+                <div class="newletter">
+                  <h6>NEWSLETTER</h6>
+                    <div class="subscribe-form">
+                      <form
+                      id="kol-id-29410"
+                      data-succes_title="Thank you!"
+                      data-success_msg="Spread the word and get a guest blog post!"
+                      data-social_msg="Great web performance articles on Basilic's blog!">
+
+                      <div class="input-group">
+                        <input name="email" class="form-control" placeholder="Email Adress" type="text">
+                        <button class="btn btn-primary" type="submit" data-kol_id="29410">Subscribe</button>
+                      </div>
+                      <div class="info">
+                        We'll only use your email to tell you about new posts.
+                      </div>
+                      <div class="error">
+                      </div>
+                    </form>
+                  </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section class="content-11">
+    <div class="container">
+        <span>Are your websites fast? Find out before your customers.</span>
+        <a class="btn btn-large btn-warning" href="/signup/">Sign Up</a>
+    </div>
+</section>
