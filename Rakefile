@@ -6,7 +6,7 @@ require "jekyll"
 
 
 # Change your GitHub reponame
-GITHUB_REPONAME = "cleverscale/basilic"
+GITHUB_REPONAME = "cleverscale/webperfio"
 
 
 namespace :site do
