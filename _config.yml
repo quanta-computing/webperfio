@@ -1,7 +1,7 @@
 # Build settings
 markdown: kramdown
 permalink: pretty
-highlighter: true
+highlighter: pygments
 paginate: 5
 comments: true
 # Styling

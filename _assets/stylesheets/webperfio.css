@@ -10,6 +10,7 @@ body, div, p, h1, h2, h3, h4, h5, h6, input{
   line-height: 1.5em;
 }
 
+
 /*GLOBAL*/
 
 body, html, .carousel, .carousel-inner{
@@ -30,7 +31,7 @@ body {
 
 .navbar .container-fluid{
   max-width: 100%;
-  padding: 0px 50px;
+  padding: 0px 50px ;
 }
 
 
@@ -56,7 +57,7 @@ body {
 }
 
 pre {
-  padding: 30px 0;
+  padding: 30px 10px;
   background-color:transparent;
   border: 0px solid #ccc;
   color: #7A8A99;
@@ -93,6 +94,10 @@ pre {
 .btn-info:hover{
   background-color: #00BFD9;
   box-shadow: 0px 4px 8px rgba(51, 68, 85, 0.50);
+}
+
+.btn.flat{
+  box-shadow: 0px 0px 0px rgba(51, 68, 85, 0.50);
 }
 
 
@@ -159,19 +164,19 @@ h1, h2, h3, h4, h5, h6{
 
 /*COMPONENTS*/
 
-.section > div{
+.section{
   padding-top: 30px;
-  padding-bottom: 10px
+  padding-bottom: 30px
 }
 
 .section .title{
   text-align: center;
+  padding-bottom: 20px;
 }
 
 .section .title h2{
   font-size: 40px;
   font-weight: 300;
-  padding-top: 30px;
 }
 
 @media(max-width: 640px){
@@ -190,7 +195,7 @@ h1, h2, h3, h4, h5, h6{
 }
 
 .description{
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 300;
   color: #727272;
 }
@@ -214,7 +219,7 @@ h1, h2, h3, h4, h5, h6{
   color: #212121;
   margin-top: 20px;
   margin-bottom: 10px;
-  font-size: 20px;
+  font-size: 18px;
   text-transform: uppercase;
   font-weight: 500;
 }
@@ -269,7 +274,7 @@ span.fa.small{
 .navbar {
   border-radius: 0px;
   border: 0px solid #ffffff;
-  box-shadow: 2px 0px 5px #455A64;
+  box-shadow: 2px 0px 8px #212121;
   font-weight: 300;
 }
 
@@ -313,7 +318,7 @@ background-color: #ffffff;
 
 
 
-.navbar-default .navbar-nav>li>a, .navbar-default .navbar-nav>li>a:hover {
+.navbar-default .navbar-nav>li>a, .navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
 color: #ffffff;
 padding: 25px;
 }
@@ -327,11 +332,11 @@ padding: 25px;
   border-bottom: 0px solid #00BCD4;
 }
 
-.navbar-default .navbar-nav>li.active>a, .navbar-default .navbar-nav>li.active>a:hover {
+.navbar-default .navbar-nav>li.active>a, .navbar-default .navbar-nav>li.active>a:hover, .navbar-default .navbar-nav>li.active>a:focus {
   padding-bottom: 21px;
   border-bottom: 4px solid #FF4081;
   background-color: transparent;
-  color: #ffffff;
+  color: #FFFFFF;
 }
 
 
@@ -350,7 +355,7 @@ padding: 25px;
 }
 
 @media(max-width: 768px){
-  .navbar-default .navbar-brand, .navbar-default .navbar-brand{
+  .navbar-default .navbar-brand, .navbar-default .navbar-brand, .navbar-default .navbar-brand:hover{
     padding: 15px;
   }
   .navbar-default .navbar-nav>li>a, .navbar-default .navbar-nav>li>a:hover {
@@ -387,13 +392,19 @@ padding: 25px;
   font-weight: 400;
   padding-top: 60px;
 }
-@media(max-width: 640px){
+
+.splash.dark .description{
+  color: #ffffff;
+}
+
+@media(max-width: 1040px){
   .splash .title h1{
     font-size: 36px;
   }
-}
-.splash.dark .description{
-  color: #ffffff;
+
+  .splash.dark .description{
+    font-size: 16px;
+  }
 }
 
 /*key features*/
@@ -409,7 +420,6 @@ padding: 25px;
   padding-top: 30px;
   padding-bottom: 10px;
 }
-
 
 .carousel-indicators li {
   width: 14px;
@@ -448,13 +458,14 @@ padding: 25px;
   bottom: 0px;
 }
 
-@media(max-width: 1080px){
+@media(max-width: 1180px){
   .carousel img{
     max-height: 350px;
+    max-width: 100%;
   }
   #key-features .item h2{
     font-weight: 300;
-    font-size: 40px;
+    font-size: 32px;
     padding-top: 10px;
   }
 }
@@ -471,27 +482,16 @@ padding: 25px;
   padding-top: 50px;
 }*/
 
-.customers .col-sm-2, .customers .col-xs-4{
-  height: 180px;
-  padding-bottom: 20px;
-  padding-top: 20px;
+.customers .col-xs-2{
+  height: 70px;
   text-align: center;
 }
 
-.customers .col-xs-4{
-  height: 100px;
-}
 
-.customers .col-sm-2 img, .customers .col-xs-4 img{
+.customers .col-xs-2 img{
   position: relative;
   top: 50%;
   transform: translateY(-50%);
-}
-
-@media(max-width: 640px){
-  .customers .col-xs-4{
-    height: 60px;
-  }
 }
 
 .cust-lefigaro, .cust-leparisien, .cust-lequipe, .cust-maisonsdumonde, .cust-nouvelobs,
@@ -537,28 +537,29 @@ padding: 25px;
 
 /*tabs*/
 
+.nav-tabs {
+ border-bottom: 0px solid #ddd;
+}
+
 .tab-control{
-    background-color: #B6B6B6;
+    margin-top: 40px;
     height: 2.5em;
     text-align: center;
     font-size: 12px;
-    text-transform: uppercase;
-}
-
-.tab-control ul{
-  padding: 0px 150px;
 }
 
 .tab-control .nav>li>a{
-    padding: 0;
+    background-color: #B6B6B6;
+    margin: 0;
+    padding: 0 15px;
     line-height: 2.5em;
     color: #ffffff;
     text-decoration: none;
 }
 
-.tab-control .nav-tabs.nav-justified>li>a,
-.tab-control .nav-tabs.nav-justified>.active>a:hover,
-.tab-control .nav-tabs.nav-justified>.active>a:focus {
+.tab-control .nav-tabs>li>a,
+.tab-control .nav-tabs>.active>a:hover,
+.tab-control .nav-tabs>.active>a:focus {
 border: 0px solid #ddd;
 border-radius:0;
 }
@@ -569,8 +570,8 @@ border-radius:0;
 }
 
 .tab-control .nav-tabs a:hover{
-  background-color: #D8E2EC;
-  color: #7A8A99;
+  background-color: #969696;
+  color: #FFFFFF;
 }
 
 .tab-control .nav-tabs .active a:hover{
@@ -579,7 +580,7 @@ border-radius:0;
 }
 
 .tab-content{
-  min-height: 200px;
+  overflow: scroll;
   background-color: #EAECED;
 }
 
@@ -600,6 +601,38 @@ border-radius:0;
   line-height: 50px;
   font-size: 25px;
   border-radius: 25px;
+}
+
+h2{
+  font-weight: 300;
+  font-size: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.description ul{
+  padding: 10px 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.description li{
+  padding: 8px 0;
+  font-size: 16px;
+  font-weight: 300;
+  color: #727272;
+}
+
+.description li .label{
+  background-color: #00BCD4;
+  margin-right: 6px;
+  margin-top: -4px;
+  padding: 0;
+  font-size: 12px;
+  line-height: 12px;
+  height: 20px;
+  width: 20px;
+  border-radius: 10px;
 }
 
 /*Pricing*/
@@ -655,10 +688,46 @@ border-radius:0;
 
 }
 
+/*Cross Role Data*/
+
+#crossroledata .row{
+  padding-top: 16px;
+
+}
+
+#crossroledata .row.header{
+  padding-bottom: 24px;
+}
+
+.before{
+  text-align: right;
+}
+
+.after{
+  text-align: left;
+}
+
+.becomes{
+  text-align: center;
+}
+
+.becomes button{
+  height: 24px;
+  padding: 2px 6px;
+}
+
+.before h3, .after h3{
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.before p, .after p{
+}
+
 /*FOOTER*/
 .pre-footer{
   text-align: center;
-  padding: 0px 0;
 }
 
 .pre-footer .col-xs-12{

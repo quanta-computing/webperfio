@@ -1,91 +1,47 @@
-<div class="title container fadeInUp" data-wow-duration="600ms" data-wow-delay="400ms">
-  <h2>Start learning in minutes</h2>
-  <p class="description">Simple integration. No infrastructure load or page loadtime overhead.</p>
-</div>
-<div class="container-fluid">
-  <div class="row">
-    <div class="feature col-sm-6 fadeInLeft" data-wow-duration="600ms" data-wow-delay="400ms">
-      <p class="image"><span class="fa fa-tag"></span></p>
-      <p class="title">Install</p>
-      <p class="description">Add our tag manually or <br/> with your tag manager</p>
-    </div>
-    <div class="feature col-sm-6 fadeInRight" data-wow-duration="600ms" data-wow-delay="400ms">
-      <p class="image"><span class="fa fa-cogs"></span></p>
-      <p class="title">Customize</p>
-      <p class="description">Tag custom metrics <br/> and segments</p>
-    </div>
-  </div>
-</div>
-<div role="tabpanel">
-  <!-- Nav tabs -->
-  <div class="tab-control">
-    <ul class="nav nav-tabs nav-justified container-fluid" role="tablist">
-      <li role="presentation" class="active"><a href="#setup" aria-controls="setup" role="tab" data-toggle="tab">Setup</a></li>
-      <li role="presentation"><a href="#usertiming" aria-controls="usertiming" role="tab" data-toggle="tab">User timing</a></li>
-      <li role="presentation"><a href="#pagetype" aria-controls="pagetype" role="tab" data-toggle="tab">Page type</a></li>
-      <li role="presentation"><a href="#conversion" aria-controls="conversion" role="tab" data-toggle="tab">Conversion</a></li>
-    </ul>
-  </div>
-  <!-- Tab panes -->
-  <div class="tab-content">
-    <div role="tabpanel" class="tab-pane active container" id="setup">
-      <pre>
-/*
- * Insert this javascript snipet right after the opening of the HEAD markup.
- * This block setup the minimum for the method queue pattern.
- * http://calendar.perfplanet.com/2012/the-non-blocking-script-loader-pattern/
- */
-
-var FOGLIO=window.FOGLIO||{};
-FOGLIO.queue=FOGLIO.queue||{};
-FOGLIO.tag_s=new Date().getTime();
-FOGLIO.app_id="XXXX";
-FOGLIO.cr=1;
-FOGLIO.sr=1;
-FOGLIO.ft="XXXX";
-FOGLIO.q=function(a,b){FOGLIO.queue[a]=FOGLIO.queue[a]||[];FOGLIO.queue[a].push(b)};
-
-
-/*
- * Insert this javascript snipet right before the closing of the BODY markup.
- * This block loads Basilic script using the Friendly iFrame method.
- * https://www.facebook.com/notes/facebook-engineering/under-the-hood-the-javascript-sdk-truly-asynchronous-loading/10151176218703920
- */
-
-(function(){var f,d,a,b=document.createElement("iframe");b.src="javascript:false";(b.frameElement||b).style.cssText="width: 0; height: 0; border: 0; display: none;";var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(b,a);try{d=b.contentWindow.document}catch(c){f=document.domain;b.src="javascript:var d=document.open();d.domain='"+f+"';void(0);";d=b.contentWindow.document}d.open()._l=function(){var e=this.createElement("script");if(f){this.domain=f}e.id="boomr-if-as";e.src=window.location.protocol=="https:"?"https://d3phbp7p78bdk9.cloudfront.net/XXXX/foglio.js":"http://foglio.basilic.io/XXXX/foglio.js";this.body.appendChild(e)};d.write('&lt;body onload="document._l();">');d.close()})();
-      </pre>
-    </div>
-    <div role="tabpanel" class="tab-pane container-fluid" id="usertiming">
-      <pre>
-/*
- * Insert this javascript snipet to mark the start or the end of a page block (e.g. header, menu, main-content)
- * Value must be a Date, not a duration.
- * For cross browser consistency, reference time is FOGLIO.tag_s added in the first tag block
- */
-
-FOGLIO.q('mark', {name:'header', value: new Date().getTime()})
-
-
-      </pre>
-    </div>
-    <div role="tabpanel" class="tab-pane container-fluid" id="pagetype">
-      <pre>
-/*
- * Insert this javascript snipet to tag the type of a page (e.g. home, category, search, product).
- */
-
-FOGLIO.q('segment', {name: 'pagetype', value: 'home'})
-      </pre>
-    </div>
-    <div role="tabpanel" class="tab-pane container-fluid" id="conversion">
-      <pre>
-/*
- * Insert this javascript snipet on the after payment page to tag a conversion.
- * conversion true is mandatory. amount (cart amount) and cart (items in cart) are optionals.
- */
-
+<div class="section">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-5">
+        <h2>Start learning in minutes</h2>
+        <div class="description">
+          Simple integration. No infrastructure load or page loadtime overhead.
+          <ul>
+            <li><button class="btn btn-info flat label">1</button> Add our tag on every page.</li>
+            <li><button class="btn btn-info flat label">2</button> Tag custom metrics and segments</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-sm-6 col-sm-offset-1">
+        <div role="tabpanel">
+          <!-- Nav tabs -->
+          <div class="tab-control">
+            <ul class="nav nav-tabs nav" role="tablist">
+              <li role="presentation" class="active"><a href="#conversion" aria-controls="conversion" role="tab" data-toggle="tab">Conversion</a></li>
+              <li role="presentation"><a href="#usertiming" aria-controls="usertiming" role="tab" data-toggle="tab">User timing</a></li>
+              <li role="presentation"><a href="#pagetype" aria-controls="pagetype" role="tab" data-toggle="tab">Page type</a></li>
+            </ul>
+          </div>
+          <!-- Tab panes -->
+          <div class="tab-content">
+            <div role="tabpanel" class="tab-pane active" id="conversion">
+              <pre>
 FOGLIO.q('biz', {conversion:true, amount: 23.12, cart: 3})
-      </pre>
+              </pre>
+            </div>
+            <div role="tabpanel" class="tab-pane" id="usertiming">
+              <pre>
+FOGLIO.q('mark', {name:'header-end', value: new Date().getTime()})
+              </pre>
+            </div>
+            <div role="tabpanel" class="tab-pane" id="pagetype">
+              <pre>
+FOGLIO.q('segment', {name: 'pagetype', value: 'home'})
+              </pre>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      </div>
     </div>
   </div>
-</div>
