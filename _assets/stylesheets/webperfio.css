@@ -105,6 +105,11 @@ pre {
   box-shadow: 0px 0px 0px rgba(51, 68, 85, 0.50);
 }
 
+.label{
+  border-radius: 4px;
+  padding: 4px 8px;
+  font-size: 14px;
+}
 
 /*COLORS*/
 
@@ -113,7 +118,9 @@ h1, h2, h3, h4, h5, h6{
 }
 
 
-.dark h1,.dark h2,.dark h3,.dark h4,.dark h5,.dark h6{
+.dark h1,.dark h2,
+.dark h3,.dark h4,
+.dark h5,.dark h6{
   color: #ffffff;
 }
 
@@ -128,6 +135,11 @@ h1, h2, h3, h4, h5, h6{
 .secondary{
   color: #FF4081;
   font-weight: 400;
+}
+
+.label.label-info{
+  background-color: #00BCD4;
+  color: #ffffff;
 }
 
 .fa.blue{
@@ -229,6 +241,10 @@ h1, h2, h3, h4, h5, h6{
   font-weight: 500;
 }
 
+.dark .feature .title{
+  color: #ffffff;
+}
+
 
 span.fa{
   width: 100px;
@@ -295,11 +311,14 @@ margin-bottom: 0px;
 
 }
 
-.main-nav .navbar-default, .main-nav .navbar-default{
+.main-nav .navbar-default,
+.main-nav .navbar-default{
   background-color: #455A64;
 }
 
-.navbar-default .navbar-brand, .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
+.navbar-default .navbar-brand,
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
   color: #ffffff;
   padding: 25px 15px;
   font-weight: 300;
@@ -313,7 +332,8 @@ margin-bottom: 0px;
   border: 0px solid #dddddd;
 }
 
-.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
  background-color: transparent;
 }
 
@@ -323,7 +343,9 @@ background-color: #ffffff;
 
 
 
-.navbar-default .navbar-nav>li>a, .navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
+.navbar-default .navbar-nav>li>a,
+.navbar-default .navbar-nav>li>a:hover,
+.navbar-default .navbar-nav>li>a:focus {
 color: #ffffff;
 padding: 25px;
 }
@@ -337,7 +359,9 @@ padding: 25px;
   border-bottom: 0px solid #00BCD4;
 }
 
-.navbar-default .navbar-nav>li.active>a, .navbar-default .navbar-nav>li.active>a:hover, .navbar-default .navbar-nav>li.active>a:focus {
+.navbar-default .navbar-nav>li.active>a,
+.navbar-default .navbar-nav>li.active>a:hover,
+.navbar-default .navbar-nav>li.active>a:focus {
   padding-bottom: 21px;
   border-bottom: 4px solid #FF4081;
   background-color: transparent;
@@ -345,7 +369,8 @@ padding: 25px;
 }
 
 
-.navbar-default .navbar-nav>li>a.btn, .navbar-default .navbar-nav>.active>a.btn{
+.navbar-default .navbar-nav>li>a.btn,
+.navbar-default .navbar-nav>.active>a.btn{
   margin-top: 15px;
   padding: 10px 1em;
   color: #ffffff;
@@ -360,15 +385,19 @@ padding: 25px;
 }
 
 @media(max-width: 768px){
-  .navbar-default .navbar-brand, .navbar-default .navbar-brand, .navbar-default .navbar-brand:hover{
+  .navbar-default .navbar-brand,
+  .navbar-default .navbar-brand,
+  .navbar-default .navbar-brand:hover{
     padding: 15px;
   }
-  .navbar-default .navbar-nav>li>a, .navbar-default .navbar-nav>li>a:hover {
+  .navbar-default .navbar-nav>li>a,
+  .navbar-default .navbar-nav>li>a:hover {
   padding: 15px 19px;
   border-bottom: 0px solid #FF4081;
   }
 
-  .navbar-default .navbar-nav>li.active>a, .navbar-default .navbar-nav>li.active>a:hover {
+  .navbar-default .navbar-nav>li.active>a,
+  .navbar-default .navbar-nav>li.active>a:hover {
     padding: 15px;
     border-bottom: 0px solid #FF4081;
     border-left: 4px solid #FF4081;
@@ -440,11 +469,13 @@ padding: 25px;
   background-color: #607D8B;
 }
 
-.carousel .col-sm-6, .carousel .col-sm-offset-1{
+.carousel .col-sm-6,
+.carousel .col-sm-offset-1{
   text-align: center;
 }
 
-.carousel .col-sm-4, .carousel .col-sm-5{
+.carousel .col-sm-4,
+.carousel .col-sm-5{
   padding-bottom: 40px;
 }
 
@@ -487,21 +518,28 @@ padding: 25px;
   padding-top: 50px;
 }*/
 
-.customers .col-xs-2{
+.customers .col-xs-4{
   height: 70px;
   text-align: center;
 }
 
 
-.customers .col-xs-2 img{
+.customers .col-xs-4 img{
   position: relative;
   top: 50%;
   transform: translateY(-50%);
 }
 
-.cust-lefigaro, .cust-leparisien, .cust-lequipe, .cust-maisonsdumonde, .cust-nouvelobs,
+.cust-lefigaro,
+.cust-leparisien,
+.cust-lequipe,
+.cust-maisonsdumonde,
+.cust-nouvelobs,
 .cust-orange
-{ width: 80%; background-size: 100%; background-image: url('/img/customers.png'); }
+{
+  width: 80%;
+  background-size: 100%;
+  background-image: url('/img/customers.png'); }
 
 .cust-lefigaro { background-position: 0 0%;}
 .cust-leparisien { background-position: 0 14.864865%;}
@@ -569,7 +607,8 @@ border: 0px solid #ddd;
 border-radius:0;
 }
 
-.tab-control .nav-tabs .active a, .tab-control .nav-tabs .active a:focus{
+.tab-control .nav-tabs .active a,
+.tab-control .nav-tabs .active a:focus{
   background-color: #EAECED;
   color: #7A8A99;
 }
@@ -692,57 +731,46 @@ h2{
 }
 
 /*Pricing*/
-.box{
-  background-color: #ffffff;
-  box-shadow: 0px 2px 5px #999;
-}
-
-.box .title{
-  text-transform: uppercase;
-  font-size: 18px;
-  padding: 20px 0;
-  background-color: #607D8B;
-  color: #ffffff;
-}
-
-.box .price{
-  padding: 20px 0;
+.plan{
   text-align: center;
-  font-size: 14px;
-  line-height: 50px;
-  color: #727272;
+  margin-bottom: 30px;
+}
+.plan .title{
+  text-transform: uppercase;
+  font-size: 16px;
+  padding: 24px 0 16px;
+  font-weight: 600;
 }
 
-.box .price .number{
-  font-size: 50px;
-  color: #212121;
+.plan .description{
+  font-size: 18px;
+  font-weight: 300;
+  margin: 0;
+  padding: 0.5em 0;
 }
 
-.box .price .currency{
-  font-size: 25px;
-  color: #727272;
-  padding: 0 10px 0 5px;
+.plan .darker .description{
+  font-size: 16px;
 }
 
-.box ul{
-  list-style-type: none;
+.plan .darker .description{
+  color: #e0e0e0;
+  padding-bottom: 1em;
+}
+
+.plan .darker .description a, .plan .darker .description a:hover, .plan .darker .description a:focus{
+  color: #FF4081;
+  text-decoration: none;
+}
+
+.plan .price{
+  font-size: 60px;
+  font-weight: 300;
   margin: 0;
   padding: 0;
+  line-height: 1em;
 }
 
-.box li{
-  padding: 16px 30px;
-  font-size: 16px;
-  border-top: 1px solid #DADADA;
-  color: #727272;
-  font-weight: 300;
-}
-
-.box li i.fa{
-  padding-right: 12px;
-  color: #607D8B;
-
-}
 
 /*FOOTER*/
 .pre-footer{
@@ -802,12 +830,14 @@ h2{
 
 }
 
-.footer-menu li a, .footer-menu li a:visited{
+.footer-menu li a,
+.footer-menu li a:visited{
   text-decoration: none;
   color: #727272;
 }
 
-.footer-menu li a:hover, .footer-menu li a:active{
+.footer-menu li a:hover,
+.footer-menu li a:active{
   text-decoration: none;
   color: #434343;
 }
