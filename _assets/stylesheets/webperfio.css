@@ -186,6 +186,10 @@ h1, h2, h3, h4, h5, h6{
   padding-bottom: 30px
 }
 
+.linkable{
+  padding-top: 80px;
+}
+
 .section .title{
   text-align: center;
   padding-bottom: 20px;
