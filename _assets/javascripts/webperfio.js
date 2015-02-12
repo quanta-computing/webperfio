@@ -21,6 +21,7 @@ $(document).ready(function() {
   });
   $("#contact-form").on("submit", function(e) {
     e.preventDefault();
+
     $.ajax({
       url: $(this).attr("action"),
       type: 'POST',
@@ -33,5 +34,6 @@ $(document).ready(function() {
         $("#ok").show();
       }
     });
+    $("#contact-form [type='submit']").blur();
   });
 });

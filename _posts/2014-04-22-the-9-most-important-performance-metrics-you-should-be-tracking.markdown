@@ -12,7 +12,7 @@ If you doubt that web performance impacts acquisition costs, retention and conve
 
 There are tens of web performance monitoring software, self hosted or in the cloud. Each solution uses one or multiple monitoring technics focusing on the 4 components involved in displaying a web page or a content to a real user: server, network, application or browser. These solutions rely on three distinct approaches, i.e. synthetic monitoring (e.g. probe), backend monitoring (e.g. application performance monitoring, network monitoring) and Real User Monitoring (RUM). As a result, in web performance optimisation (WPO) like in web analytics, the problem is not the lack of data but data overwhelming. Efficient Web Performance Optimization requires 2 sets of performance metrics...
 
-#### Users and business oriented performance metrics
+#### Users and business oriented performance metrics:
 
 Users and business oriented performance metrics help you understand how your real users experience your website and if it matches business requirements. These metrics should answer the 3 following questions:
 What is the perception of your users with regard to your website speed?

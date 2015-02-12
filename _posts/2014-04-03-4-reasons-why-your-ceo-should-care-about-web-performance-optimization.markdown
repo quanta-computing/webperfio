@@ -10,9 +10,12 @@ author: Anh-Tuan Gai
 If you have a useful product, service or content site, the utility of it is bound to attract an audience and convert it into loyal customers or users. And everyone in your company should work on optimizing the related key business metrics (e.g. unique visitors conversion, interactions per visit, cost per conversion, bounce rate, exit pages).
 
 
+### Your CEO is not always right:
+
 There are hundreds of different ways you can reduce acquisition costs or increase retention and conversion, but there is only one where development and operations team have the lead: Web Performance Optimization. As a developer or an operation guy you like to optimize web performance because it will make users happiers, but your CEO don’t see interest in spending too much time on webperf optimization.
 
-###A common blunder CEOs make:
+
+####A common blunder CEOs make:
 
 “if nobody complains about web performance, budget should be spent on marketing”.
 
@@ -31,9 +34,16 @@ To make it more visual, here is a list of related infographics (you can find muc
 * Radware [[3](http://www.webperformancetoday.com/wp-content/uploads/2013/10/BLOG-StateOfTheUnionFall2013Infographic.png)] ([www](http://radware.com/))
 * KISSmetrics [[4](http://cdn.sixrevisions.com/0333-10_kissmetrics_infographic_loadtime.jpg)]  ([www](http://kissmetrics.com/))
 
-###Another blunder CEOs make:
+####Another blunder CEOs make:
 
-“These studies concern Internet Giants, it does not apply to our business.”So here is a list of reasons why your CEO should care about Web Performance optimization:
+“These studies concern Internet Giants, it does not apply to our business.”
+
+While your website might be an exception, web performance impact user experience and thus business. Further more, if nobody in your company measure correlation between web performance and business performance, you can't leverage web performance in business performance.
+
+
+### The 4 reasons why web performance matters
+
+So here is a list of reasons why your CEO should care about Web Performance optimization:
 
 ####SEO
 Seach engine like Google must crawl billions of pages each day. The more pages bots crawl from your website, the more keywords lead to your website and the higher your website ranks in search results. However, search engines crawling resource are limited. Depending on your domain rank, crawlers spend a certain amount of time on your website. As a result, the faster you feed the bots, the more pages they will crawl. At basilic.io, we’ve seen an e-commerce website with 50% less page crawled by Google after a deployment that increased the time to first byte by one second.
@@ -48,4 +58,4 @@ Your company understand that mobile is a key to growth, so tens of thousands of 
 You company is successful in its own country. Internationalization is now the key to growth: Europe, South America, China, Russia, Japan, India are huge markets to conquer. Hundreds of thousands of dollars have been spent in market studies, local team recruitments, website translation and marketing. However, conversion rates are much lower than in your own country. It is maybe because of poor web performance in foreign countries (where local competitors have optimize their websites for local visitors). If conversion is 30% lower than in your origin country because of poor performance,  30% of local marketing campaigns and human resources budgets are wasted.
 
 ### Homework
-This list is clearly not exhaustive, but it gives practical examples that your CEO and business team could adhere to. If you have other reasons in mind (the one you used to convince your CEO that he shouldn’t denigrate Web Performance), please share it in comments. Otherwise, start educating your CEO now, and next time we’ll tell you what are important web performance metrics you should monitor and how to optimize each of them.
+This list is clearly not exhaustive, but it gives practical examples that your CEO and business team could adhere to. If you have other reasons in mind (the one you used to convince your CEO that he shouldn’t denigrate Web Performance), please share it in comments. Otherwise, start educating your CEO now, and next time we’ll tell you what are the important web performance metrics you should monitor and how to optimize each of them.
