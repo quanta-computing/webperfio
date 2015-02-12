@@ -2,6 +2,7 @@
 *= require bootstrap.min.css
 *= require fonts.css
 *= require font-awesome.min.css
+*= require magnific-popup.css
 */
 
 body, div, p, h1, h2, h3, h4, h5, h6, input{
@@ -513,6 +514,22 @@ padding: 25px;
 .carousel-indicators {
   bottom: 0px;
 }
+
+.carousel .magnified:hover{
+  cursor: zoom-in;
+}
+
+.mfp-title {
+text-align: center;
+line-height: 30px;
+font-size: 30px;
+color: #ffffff;
+background-color: rgba(0, 0, 0, 0.6);
+margin-top: -54px;
+padding: 10px;
+font-weight: 300;
+}
+
 
 @media(max-width: 1180px){
   .carousel img{
