@@ -1,15 +1,22 @@
 ---
-layout: default
+layout: blog
 title: WebPerf IO - Blog
 active: blog
 pagetype: blog
 ---
 
-<div class="section">
-  <div class="splash dark blue">
-    <div class="title container">
-      <h1><i class="fa fa-heartbeat"></i> The Blue Pill</h1>
-      <p class="description">The blog that will make you love Web Performance.</p>
+
+{% for post in site.posts %}
+  <div class="excerpt">
+    <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+    <p class="meta">
+      by {{ post.author }} on {{post.date | date: "%b %-d, %Y" }}
+    </p>
+    <div class="description">
+      {{ post.excerpt }}
     </div>
+    <p class="more">
+      <a type="button" href="{{ post.url }}">Read more</a>
+    </p>
   </div>
-</div>
+{% endfor %}

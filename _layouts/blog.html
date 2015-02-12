@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<head>
+{% include head.html %}
+</head>
+<html lang="en">
+  <body data-spy="scroll" data-target="#main-nav">
+    <div class="page-wrapper" id="top">
+        <!-- header-2 -->
+        <div class="main-nav">
+          {% include header.html %}
+        </div>
+        <div class="content">
+          <div class="section">
+            <div class="splash dark blue">
+              <div class="title container-fluid">
+                <h1><i class="fa fa-heartbeat"></i> The Blue Pill</h1>
+                <p class="description">The blog that will make you love Web Performance.</p>
+              </div>
+            </div>
+          </div>
+          <div class="section">
+            <div class="container-fluid">
+              <div class="row">
+
+                <div class="col-sm-8 blog">
+                  {{ content }}
+                </div>
+                <div class="col-md-3 col-md-offset-1 col-sm-4">
+                    <div class="section">
+                      <h3>About <i class="fa fa-heartbeat blue"></i> WebPerf <span class="secondary">IO</span></h6>
+                      <p class="description">WebPerf IO helps high traffic websites transform web perforamnce into business performance.</p>
+                    </div>
+                    <div class="section">
+                      <h3>Newsletter</h6>
+                      <form accept-charset="UTF-8" enctype="multipart/form-data" method="post"
+                    action="https://webperfio.wufoo.com/forms/m15kdb880p8msco/#public" id="contact-form">
+                        <div class="form-group">
+                          <label for="email">Email*</label>
+                          <input type="email" id="email" class="form-control" name="Field1" placeholder="john.doe@gmail.com" required>
+                        </div>
+                        <input type="hidden" id="idstamp" name="idstamp" value="Yar5RXAcc5z91fAY+ICQSvcd3iuimppAy8caqAv2NyI=" />
+                        <button type="submit" class="btn btn-info">register</button>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+    </div>
+    {% include footer.html %}
+    {% include foot.html %}
+  </body>
+</html>

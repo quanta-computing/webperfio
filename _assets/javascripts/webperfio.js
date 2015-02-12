@@ -3,20 +3,34 @@
 //= require lazy-bootstrap-carousel-v3.js
 // = require jquery.magnific-popup.min.js
 
+
 $(document).ready(function() {
   //Start carousel
   $('.carousel').carousel({
     interval: 5000
   });
-  $(document).ready(function() {
-    $('.carousel-inner').magnificPopup({
-      delegate: '.magnified',
-      type: 'image',
-      gallery: {
-        enabled: true
+  $('.carousel-inner').magnificPopup({
+    delegate: '.magnified',
+    type: 'image',
+    gallery: {
+      enabled: true
+    },
+    image: {
+      titleSrc: 'title'
+    }
+  });
+  $("#contact-form").on("submit", function(e) {
+    e.preventDefault();
+    $.ajax({
+      url: $(this).attr("action"),
+      type: 'POST',
+      data: $(this).serialize(),
+      datatype: 'jsonp',
+      beforeSend: function() {
+        $("#ok").hide();
       },
-      image: {
-        titleSrc: 'title'
+      error: function(error) {
+        $("#ok").show();
       }
     });
   });
