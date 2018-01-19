@@ -24,7 +24,6 @@ $(document).ready(function() {
     });
   });
 
-
   //Start carousel
   $('.carousel').carousel({
     interval: 5000
@@ -39,14 +38,33 @@ $(document).ready(function() {
       titleSrc: 'title'
     }
   });
+
   $("#contact-form").on("submit", function(e) {
+    e.preventDefault();
+      $.ajax({
+        url: "https://formspree.io/julien.barritaud@quanta-computing.com",
+        method: "POST",
+        data: $(this).serialize(),
+        dataType: "json"
+        beforeSend: function() {
+          $("#ok").hide();
+        },
+        success: function(data) {
+          console.log(data);
+        },
+        error: function(error) {
+          console.log(error);
+          $("#ok").show();
+        }
+      });
+  });
+  $("#contact-form-disable").on("submit", function(e) {
     e.preventDefault();
 
     $.ajax({
       url: $(this).attr("action"),
       type: 'POST',
       data: $(this).serialize(),
-      datatype: 'jsonp',
       beforeSend: function() {
         $("#ok").hide();
       },

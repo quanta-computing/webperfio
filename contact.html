@@ -8,7 +8,7 @@ pagetype: contact
 <div class="section tos">
   <div class="splash">
     <div class="title container">
-      <h1>Nous serions ravis de discuter avec vous !</span></h1>
+      <h1>Nous serions ravis de discuter avec vous !</h1>
     </div>
   </div>
 </div>
@@ -18,22 +18,23 @@ pagetype: contact
       <div class="col-sm-6 col-sm-offset-1">
         <h2>Contactez nous</h2>
         <form accept-charset="UTF-8" enctype="multipart/form-data" method="post"
-      action="mailto:hello@quanta-computing.com" id="contact-form">
+action="https://formspree.io/julien.barritaud@quanta-computing.com" id="contact-form">
+        <input type="hidden" name="_language" value="fr" />
           <div class="row">
             <div class="form-group col-xs-6">
               <label for="firstname">Prénom*</label>
-              <input type="text" id="firstname" class="form-control" name="Field1" placeholder="Julien" required>
+              <input type="text" id="firstname" class="form-control" name="firstname" placeholder="Julien" required>
             </div>
             <div class="form-group col-xs-6">
               <label for="lastname">Nom*</label>
-              <input type="text" id="lastname" class="form-control" name="Field2" placeholder="Molina" required>
+              <input type="text" id="lastname" class="form-control" name="lastname" placeholder="Martin" required>
             </div>
           </div>
           <div class="form-group">
             <label for="email">Email*</label>
-            <input type="email" id="email" class="form-control" name="Field3" placeholder="j.molina@playa.com" required>
+            <input type="email" id="email" class="form-control" name="email" placeholder="j.martin@webperf.io" required>
           </div>
-          <div class="form-group">
+          <!--div class="form-group">
             <label for="purpose">Sujet*</label>
             <select id="purpose" class="form-control" name="Field4" required>
               <option value="Get a trial account">Obtenir un compte d'essai</option>
@@ -42,12 +43,12 @@ pagetype: contact
               <option value="Investment">Investissement</option>
               <option value="Press">Presse</option>
             </select>
-          </div>
+          </div-->
           <div class="form-group">
             <label for="message">Message*</label>
-            <textarea type="text" id="message" class="form-control" name="Field5" rows="5" required></textarea>
+            <textarea type="text" id="message" class="form-control" name="message" rows="5" required></textarea>
           </div>
-          <input type="hidden" id="idstamp" name="idstamp" value="wzfIERyg98MvrGxCJeC8tcPd0gmCNt1x1DyMdu3N0GE=" />
+          <!--input type="hidden" id="idstamp" name="idstamp" value="wzfIERyg98MvrGxCJeC8tcPd0gmCNt1x1DyMdu3N0GE=" /-->
           <button type="submit" class="btn btn-lg btn-warning">Envoyer</button>
         </form>
       </div>
