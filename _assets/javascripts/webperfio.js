@@ -42,36 +42,16 @@ $(document).ready(function() {
   $("#contact-form").on("submit", function(e) {
     e.preventDefault();
       $.ajax({
-        url: "https://formspree.io/julien.barritaud@quanta-computing.com",
+        url: "https://formspree.io/hello@quanta-computing.com",
         method: "POST",
         data: $(this).serialize(),
-        dataType: "json"
-        beforeSend: function() {
-          $("#ok").hide();
-        },
+        dataType: "json",
         success: function(data) {
-          console.log(data);
+          $('#contact-form').fadeOut();
+          $('#thanks').fadeIn();
+
         },
-        error: function(error) {
-          console.log(error);
-          $("#ok").show();
-        }
       });
   });
-  $("#contact-form-disable").on("submit", function(e) {
-    e.preventDefault();
 
-    $.ajax({
-      url: $(this).attr("action"),
-      type: 'POST',
-      data: $(this).serialize(),
-      beforeSend: function() {
-        $("#ok").hide();
-      },
-      error: function(error) {
-        $("#ok").show();
-      }
-    });
-    $("#contact-form [type='submit']").blur();
-  });
 });
