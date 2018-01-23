@@ -958,12 +958,12 @@ Edit on
 
 .navbar-brand .logo {
   width: 250px;
-  margin-top: -40px;
+  margin-top: -55px;
 }
 
 .navbar-brand i {
-  margin-left: 20%;
-  margin-right: 20%;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 .navbar-brand a {
@@ -976,7 +976,7 @@ Edit on
 }
 
 .navbar-brand span {
-  font-size: 1.5em;
+  font-size: 2em;
 }
 
 
