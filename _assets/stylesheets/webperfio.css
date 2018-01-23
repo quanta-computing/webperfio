@@ -941,3 +941,56 @@ Edit on
   border-top: 29px solid #94D5D7;
   border-bottom: 29px solid #94D5D7;
 }
+
+
+.navbar-header {
+  width: 100%;
+  margin-top: 30px;
+}
+
+.navbar-brand {
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+.navbar-brand .logo {
+  width: 250px;
+  margin-top: -40px;
+}
+
+.navbar-brand i {
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+.navbar-brand a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.navbar-brand .heart {
+  font-size: 3em;
+}
+
+.navbar-brand span {
+  font-size: 1.5em;
+}
+
+
+#quanta-bar {
+    width: 100%;
+/*  #barre en position:fixed afin de le garder à l'écran tout le temps  */
+        position: fixed;
+/*  z-index:9999 pour que le bandeau soit toujours au dessus des autres elements  */
+    z-index: 9999;
+    background:#B4DEE3;
+    padding:8px 0;
+    font-family:  "Trebuchet MS";
+    text-align: center;
+    font-size:13px;
+    margin-top:-50px;
+    border-bottom: 10px solid #2e1b27;
+}

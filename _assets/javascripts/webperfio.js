@@ -6,6 +6,10 @@
 
 
 $(document).ready(function() {
+  $('#quanta-bar').animate({
+   marginTop: "0",
+}, 500);
+
   //
   $(function() {
     $(".punchtyped").typed({
