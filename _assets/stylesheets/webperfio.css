@@ -954,6 +954,7 @@ Edit on
   width: 100%;
   margin: 0 auto;
   margin-bottom: 50px;
+  margin-left: 0px !important;
 }
 
 .navbar-brand .logo {
@@ -990,7 +991,54 @@ Edit on
     padding:8px 0;
     font-family:  "Trebuchet MS";
     text-align: center;
-    font-size:22px;
     margin-top:-50px;
     border-bottom: 1px solid #2e1b27;
+}
+
+@media all and (min-width: 1000px) {
+  #quanta-bar {
+    font-size: 1.2vw;
+  }
+  .navbar-brand {
+    margin-top: 20px;
+  }
+}
+
+@media all and (max-width: 999px) and (min-width: 50px) {
+  #quanta-bar {
+    font-size: 3vh;
+  }
+  .navbar-brand {
+    margin-top: 45px;
+    padding-left: 30px !important;
+  }
+  #wpio_logo {
+    display: block;
+    width: 100%;
+    clear: both;
+  }
+  #heart_logo {
+    display: block;
+    width: 100%;
+    clear: both;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    margin-left: -10px;
+  }
+  #quanta_logo {
+    display: block;
+    width: 100%;
+    clear: both;
+  }
+}
+
+@media all and (max-width: 554px) and (min-width: 500px) {
+  .navbar-brand {
+    margin-top: 65px !important;
+  }
+}
+@media all and (max-width: 499px) and (min-width: 50px) {
+  .navbar-brand {
+    margin-top: 85px !important;
+  }
 }
