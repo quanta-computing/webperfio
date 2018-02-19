@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-37817498-5"></script>
+<!--  FOGLIO-->
+<script type="text/javascript">
+  var FOGLIO=window.FOGLIO||{};FOGLIO.queue=FOGLIO.queue||{};FOGLIO.tag_s=new Date().getTime();FOGLIO.app_id="3";FOGLIO.cr=1;FOGLIO.sr=1;FOGLIO.ft="546c15c7ea2907dd2715485cb000742f8450fa05";FOGLIO.q=function(a,b){FOGLIO.queue[a]=FOGLIO.queue[a]||[];FOGLIO.queue[a].push(b)};FOGLIO.oldOnerror=window.onerror;FOGLIO.jserr=0;window.onerror=function(){FOGLIO.jserr++;if(FOGLIO.oldOnerror){FOGLIO.oldOnerror.apply(this, arguments);};return false;};
+</script>
+
+
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-37817498-5');
+</script>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="google-site-verification" content="4x7Of6VT9njpKaJqG_JceF5Vv8BVl-Ixiwyq2A1-G10" />
+  <link rel="shortcut icon" href="/favicon.ico?v=2" />
+  <title>The 9 most important web performance metrics you should be tracking</title>
+<link rel="stylesheet" href="/assets/webperfio-20869df5805b5abd9323b7550fb1292e.css">
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
+
+</head>
+<html lang="en">
+  <body data-spy="scroll" data-target="#main-nav">
+    <div class="page-wrapper" id="top">
+        <!-- header-2 -->
+        <div class="main-nav">
+          <div id="quanta-bar">
+  <a href="http://www.quanta-computing.com">Quanta</a> acquiert la solution <em>WebPerf.io</em> pour compléter sa solution de <span style="font-weight: bold">Web Performance Management</span> à destination des équipes digitales. <a href="https://www.quanta-computing.com/quanta-acquiert-webperf-io/">Voir le blog.</a>
+</div>
+<nav class="navbar navbar-default">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <div class="navbar-brand">
+        <a id="wpio_logo" href="/"><span>WebPerf</span> <span class="secondary">IO</span></a>
+        <i id="heart_logo" class="heart fa fa-heartbeat"></i>
+        <a id="quanta_logo" href="https://www.quanta-computing.com/"><img class="logo" src="/img/quanta-logo.png" alt="quanta computing"/></a>
+      </div>
+    </div>
+       <!--div id="ribbon-container">
+          <a href="https://www.quanta-computing.com/" id="ribbon">WebPerf IO a été acquis par <img class="logo" src="/img/quanta-logo.png" alt="quanta computing"/></a>
+       </div-->
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="main-nav">
+      <ul class="nav navbar-nav navbar-right">
+        <!--li><a href="https://pesto.basilic.io/users/sign_in">Se connecter</a></li-->
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+        </div>
+        <div class="content blog">
+          <div class="section">
+            <div class="splash">
+              <div class="title container">
+                <h1>The Actionnables</h1>
+                <p class="description">Our blog on actionnable data.</p>
+              </div>
+            </div>
+          </div>
+          <div class="section">
+            <div class="container">
+              <div class="row">
+
+                <div class="col-sm-8 blog">
+                  <div class="post">
+  <div class="post-header">
+    <h2>The 9 most important web performance metrics you should be tracking</h1>
+    <p class="meta">
+      by Anh-Tuan Gai on Feb 3, 2015
+    </p>
+  </div>
+  <div class="post-content">
+    <p>If you doubt that web performance impacts acquisition costs, retention and conversion you should read our latest blog post: 4 reasons why your CEO should care about web performance optimization. If you are convinced that web performance is a key to success, you are looking for optimization tips. The first one we will provide is the main focus of this post: you should start tracking important metrics.</p>
+
+<h3 id="metrics-categories">Metrics categories:</h3>
+
+<p>There are tens of web performance monitoring software, self hosted or in the cloud. Each solution uses one or multiple monitoring technics focusing on the 4 components involved in displaying a web page or a content to a real user: server, network, application or browser. These solutions rely on three distinct approaches, i.e. synthetic monitoring (e.g. probe), backend monitoring (e.g. application performance monitoring, network monitoring) and Real User Monitoring (RUM). As a result, in web performance optimisation (WPO) like in web analytics, the problem is not the lack of data but data overwhelming. Efficient Web Performance Optimization requires 2 sets of performance metrics…</p>
+
+<h4 id="users-and-business-oriented-performance-metrics">Users and business oriented performance metrics:</h4>
+
+<p>Users and business oriented performance metrics help you understand how your real users experience your website and if it matches business requirements. These metrics should answer the 3 following questions:
+What is the perception of your users with regard to your website speed?
+How long does it take for a user to get what he is looking for, i.e. to fulfill user expectation?
+How long does it take to match business requirements, i.e. display page goal like the purchase button?</p>
+
+<h4 id="development-and-operations-oriented-performance-metrics">Development and operations oriented performance metrics:</h4>
+
+<p>Development and operations oriented performance metrics help you identify problems and optimization opportunities. These metrics should answer the following questions:
+Does/Did your website have availability or performance issues?
+For one particular page/content, which tier (network, server, application, browser) has/had the most impact on users and business performance metrics? i.e which team should work on performance optimization.</p>
+
+<h3 id="the-9-web-performance-metrics">The 9 web performance metrics</h3>
+
+<p>Optimizing Web Performance without one of these two sets will resulted in wasted resources and lost revenues. Using user and business oriented metrics alone means that every time you identify that a page should be optimized, you will lose time in problem resolution. Using development and operation oriented metrics alone you will lose time on optimizations that do not impact your company bottom line. To that end, here is the cheat sheet of the 9 most important web performance metrics to track:</p>
+
+<h4 id="availability">1. Availability</h4>
+<p>This metric is the most straightforward when monitoring performance: if your site or a corner of it is down it is the only metric you will get. It is also the metric everyone will instantly notice. It is a good candidate to set alerts on. You should monitor at least every endpoint: website, mobile site, API and mobile app backend. Additionally you should monitor every piece of your infrastructure (servers, network devices, tier web services). Optimizing availability and its impact on user satisfaction requires that any availability problem root cause is found and corrected, and that information is shared with end users (e.g. using status page).</p>
+
+<h4 id="lookup-time">2. Lookup time</h4>
+<p>Before making a request to your servers, a browser must find them among the millions of servers connected to the internet. If a browser spend seconds looking for your servers IP adresses, code and infrastructure optimizations are useless. This metric mainly depends on latency between users and DNS servers. This metric helps operation teams with DNS performance optimization. Furthermore, you should monitor lookup time for all subdomains and external domains involved in delivering your website. Reducing the total number of domains involved (i.e. lookups) and good DNS provider selection is a simple way to improve total lookup times.</p>
+
+<h4 id="connection-time">3. Connection time</h4>
+<p>Even if a browser quickly finds your servers, it can not send any request until a connection is established. Connection time depends on latency, the browser of users and the load of servers. This metric helps the operations team optimize load balancers and proxies. You should monitor connection time for every domain involved. Reducing the total number of domain involved (i.e. connections establishment and warming up) and using fast HTTP proxies like Nginx are simple actions to improve total connections time as well as user related performance metrics.</p>
+
+<h4 id="response-time">4. Response time</h4>
+<p>Initial actions when trying to optimize performance are generally on server response time. Response time depends on latency and on backend response time. Notice that it is important to include round trip time in the metric because servers can be as fast as they can, if latency is high it will impact user experience. This metric helps development and operations team optimize code, database, infrastructure and caching. Tracking tiers timing separately will help find the best optimization opportunities. Using proxy-caches (e.g. Varnish) and content delivery network efficiently for static content is a simple and efficient way to optimize response time as well as user perceived performance metrics.</p>
+
+<h4 id="response-download-time">5. Response download time</h4>
+<p>Even if the response time is small, the browser will not display anything until the response is fully downloaded. Response downloading time depends on the response size and bandwidth throughput. It helps development and operations teams optimize code, delivery configuration and delivery infrastructure. Using compression, asynchronous loading of secondary content and an efficient delivery strategy (multi and hybrid content delivery networks) helps in reducing the response download time and the performance as perceived by your users.</p>
+
+<h4 id="above-the-fold-loaded">6. Above the fold loaded</h4>
+<p>This is the first impression of your website performance from your users’ perspective. It represents the time between the click on the referrer page (e.g. search engine, incoming link, ad, social network page) and the time to load the visible part of the page. It will depend on many criterion including code, media loading, external content loading (e.g. ads), browser, CPU and screen size. WebPageTest speed index is a good reference metric for above the fold loading time. However, user timings are a better way to measure above the fold loading time since it gives the real user perspective (i.e. taking into account all criteria mentioned above). Limiting the number of stylesheets, asynchronous script loading, and lazy loading of media and under the fold blocks are simple actions to optimize above the fold loading time.</p>
+
+<h4 id="main-content-loaded">7. Main content loaded</h4>
+<p>This metric is the return on time investment of your users. When a user clicks on a link to get a product detailed description, the faster you fulfill his need, the most satisfied, engaged and willing to convert the user will be. User timing is the best way to measure it. Block loading prioritization is an efficient way to optimize main content loading time.</p>
+
+<h4 id="goal-loaded">8. Goal loaded</h4>
+<p>This metric ensures that performance matches business needs. If the block containing the stock status, the time to delivery and the purchase button takes seconds to display, your user will switch to your competitor’s website in his next browser’s tab. Block loading prioritization is an efficient way to optimize the Goal loading time.</p>
+
+<h4 id="page-loaded">9. Page loaded</h4>
+<p>Page load time measures time to load every content on a webpage (except those loaded in the functions triggered at the onload event). From the user’s perspective, it is also the time when the browser tab spinning wheel is replaced by your favicon. Loading secondary content when the onload event is triggered is a simple way to reduce the user perception of loading time.</p>
+
+<h3 id="whats-next">What’s next?</h3>
+<p>If you do not have any monitoring tool to collect these metrics or if your tools do not cover these needs, ask WebPerf IO for a trial account. Otherwise, start collecting these metrics, and next time we will tell you how to put these metrics in perspective (i.e segment by technical or business attributes, and correlate with usage, technical and business metrics) to make the best decisions out of them.</p>
+
+  </div>
+  <script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-65328729-1', 'auto');
+ga('send', 'pageview');
+
+</script>
+</div>
+
+                </div>
+                <div class="col-md-3 col-md-offset-1 col-sm-4">
+                    <div class="section">
+                      <h3>About <i class="fa fa-heartbeat primary"></i> WebPerf <span class="secondary">IO</span></h3>
+                      <p class="description">WebPerf IO helps high traffic websites transform web perforamnce into business performance.</p>
+                    </div>
+                    <div class="section">
+                      <!--h3>Newsletter</h6>
+                      <form accept-charset="UTF-8" enctype="multipart/form-data" method="post"
+                    action="https://webperfio.wufoo.com/forms/m15kdb880p8msco/#public" id="contact-form">
+                        <div class="form-group">
+                          <label for="email">Email*</label>
+                          <input type="email" id="email" class="form-control" name="Field1" placeholder="john.doe@gmail.com" required>
+                        </div>
+                        <input type="hidden" id="idstamp" name="idstamp" value="Yar5RXAcc5z91fAY+ICQSvcd3iuimppAy8caqAv2NyI=" />
+                        <button type="submit" class="btn btn-info">register</button>
+                      </form-->
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+    </div>
+    <div class="section darker pre-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <h3>Transformez la vitesse en croissance</h3>
+      </div>
+      <div class="col-xs-12"><a class="btn btn-warning btn-lg" role="button" href="/contact/">Contactez-nous</a></div>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <div class="container">
+    <ul class="nav nav-pills">
+      <li role="presentation"><a href="/blog">Blog</a></li>
+      <!-- <li role="presentation"><a href="/about">A propos</a></li> -->
+      <!--li role="presentation"><a href="/tos">Mentions légales</a></li-->
+      <li role="presentation"><a href="/contact">Contact</a></li>
+      <li role="presentation" class="pull-right"><a href="/"><i class="fa fa-heartbeat"> </i> WebPerf IO</a></li>
+    </ul>
+  </div>
+</div>
+
+<!-- <div class="section footer-menu">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="row">
+          <div class="col-xs-6">
+            <h3>Product</h3>
+            <ul>
+              <li><a href="/product">Features</a></li>
+              <li><a href="/pricing#product">Pricing</a></li>
+            </ul>
+            <h3>Services</h3>
+            <ul>
+              <li><a href="/services">Overview</a></li>
+              <li><a href="/pricing#services">Pricing</a></li>
+            </ul>
+          </div>
+
+          <div class="col-xs-6">
+            <h3>Company</h3>
+            <ul>
+              <li><a href="/contact/">Contact</a></li>
+              <li><a href="/blog">Blog</a></li>
+            </ul>
+            <h3>Legal</h3>
+            <ul>
+              <li><a href="/tos">Terms of Service</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="row">
+          <div class="col-xs-6">
+            <h3>Documentation</h3>
+            <ul>
+              <li><a href="http://support.basilic.io">Setup</a></li>
+              <li><a href="http://support.basilic.io">Custom attributes</a></li>
+              <li><a href="http://support.basilic.io">User timings</a></li>
+              <li><a href="http://support.basilic.io">Conversion metrics</a></li>
+              <li><a href="http://support.basilic.io">Alerts</a></li>
+              <li><a href="http://support.basilic.io">Explorer</a></li>
+              <li><a href="http://support.basilic.io">API</a></li>
+            </ul>
+          </div>
+          <div class="col-xs-6">
+            <h3>Connect<span class="hidden-xs"> with us</span></h3>
+            <ul>
+              <li><a href="https://twitter.com/webperf_io"><i class="fa fa-twitter"></i> Twitter</li>
+              <li><a href="https://github.com/webperfio"><i class="fa fa-github"></i> Github</li>
+              <li><a href="mailto:contact@webperf.io"><i class="fa fa-envelope"></i> Email</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="section footer">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-4 hidden-xs">
+        <hr/>
+      </div>
+      <div class="col-md-4">
+        <p>made with <i class="fa fa-heartbeat"></i> in Montpellier</p>
+        <p>&copy; 2015 WebPerf IO. All rights reserved.</p>
+      </div>
+      <div class="col-md-4 hidden-xs">
+        <hr/>
+      </div>
+    </div>
+  </div>
+</div> -->
+
+    <script src="/assets/webperfio-f944c23d393b1a2d4fd91c0168e8fd21.js"></script>
+<script type="text/javascript">
+  window.heap=window.heap||[],heap.load=function(t,e){window.heap.appid=t,window.heap.config=e;var a=document.createElement("script");a.type="text/javascript",a.async=!0,a.src=("https:"===document.location.protocol?"https:":"http:")+"//cdn.heapanalytics.com/js/heap-"+t+".js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(a,n);for(var o=function(t){return function(){heap.push([t].concat(Array.prototype.slice.call(arguments,0)))}},p=["clearEventProperties","identify","setEventProperties","track","unsetEventProperty"],c=0;c<p.length;c++)heap[p[c]]=o(p[c])};
+  heap.load("1220343308");
+</script>
+<script type="text/javascript">
+  (function(){var f,d,a,b=document.createElement("iframe");b.src="javascript:false";(b.frameElement||b).style.cssText="width: 0; height: 0; border: 0; display: none;";var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(b,a);try{d=b.contentWindow.document}catch(c){f=document.domain;b.src="javascript:var d=document.open();d.domain='"+f+"';void(0);";d=b.contentWindow.document}d.open()._l=function(){var e=this.createElement("script");if(f){this.domain=f}e.id="boomr-if-as";e.src="http://18.197.7.91/foglio.js";this.body.appendChild(e)};d.write('<body onload="document._l();">');d.close()})();
+</script>
+
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-65328729-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+  </body>
+</html>
