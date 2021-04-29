@@ -46,7 +46,7 @@ $(document).ready(function() {
   $("#contact-form").on("submit", function(e) {
     e.preventDefault();
       $.ajax({
-        url: "https://formspree.io/hello@quanta-computing.com",
+        url: "https://formspree.io/f/mzbydegy",
         method: "POST",
         data: $(this).serialize(),
         dataType: "json",
