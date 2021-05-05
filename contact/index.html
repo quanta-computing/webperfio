@@ -2,10 +2,7 @@
 <head>
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-37817498-5"></script>
-<!--  FOGLIO-->
-<script type="text/javascript">
-  var FOGLIO=window.FOGLIO||{};FOGLIO.queue=FOGLIO.queue||{};FOGLIO.tag_s=new Date().getTime();FOGLIO.app_id="3";FOGLIO.cr=1;FOGLIO.sr=1;FOGLIO.ft="546c15c7ea2907dd2715485cb000742f8450fa05";FOGLIO.q=function(a,b){FOGLIO.queue[a]=FOGLIO.queue[a]||[];FOGLIO.queue[a].push(b)};FOGLIO.oldOnerror=window.onerror;FOGLIO.jserr=0;window.onerror=function(){FOGLIO.jserr++;if(FOGLIO.oldOnerror){FOGLIO.oldOnerror.apply(this, arguments);};return false;};
-</script>
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
 
 <script>
@@ -107,6 +104,7 @@ action="https://formspree.io/f/mzbydegy" id="contact-form">
             <label for="message">Message*</label>
             <textarea type="text" id="message" class="form-control" name="message" rows="5" required></textarea>
           </div>
+          <div class="g-recaptcha" data-sitekey="6LdGCbMUAAAAALPxm2LRSsrzXHeb7lq-CUSDMJi6"></div>
           <!--input type="hidden" id="idstamp" name="idstamp" value="wzfIERyg98MvrGxCJeC8tcPd0gmCNt1x1DyMdu3N0GE=" /-->
           <button type="submit" class="btn btn-lg btn-warning">Envoyer</button>
         </form>
